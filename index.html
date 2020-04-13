@@ -26,75 +26,175 @@
     </head>
 
     <body>
-        <div id="landing">
-            <h1>HI! I'M LAUREN CAMERON</h1>
-            <br>
-            <p>I'm a full stack web developer in training</p>
-            <br>
-            <a href="#aboutSection">about</a>
-        </div>
+        <!-- Dual Container for full sized screens -->
+        <div class="dualContainer">
+            <div class="column">
+              <div class="rainbowBk">
+                <div class="section" id="col1L">
+                    <h1>HELLO, MY NAME IS</h1>
+                    <img class="responsive-img" src="./Assests/photo/titleName.png" width="370px">    
+                </div>
 
-        <div class="section dualContainer" id="aboutSection">
-            <div id="aboutLeft">
-                <h1>ABOUT ME</h1>
+                <div class="section" id="col2L">
+                    <img class="responsive-img" src="./Assests/photo/designer&coder.png" width="420px">    
+                  </div> 
 
+                <div class="section" id="col3L" >
+                    <img class="responsive-img" src="./Assests/photo/getintouch.png" width="240px">    
+                </div> 
+             </div> 
             </div>
-
-            <div id="aboutRight"> 
-                <p>And this is where i would put an about me section</p>
+            
+            <div class="column">
+              <div class="section" id="col1R" >
+                <img class="responsive-img circle" src="./Assests/photo/datme.jpg" width="200px"> 
+                <br>  
+                <h2 id="col1RText">I'm a full stack web developer in training</h2>
                 <br>
-                <img class="responsive-img" src="https://media.makeameme.org/created/if-i-had-5af6fe.jpg" width="300px">
-            </div>
-        </div>
-
-        <div class="section dualContainer">
-            <div id="skillsLeft">
-                <h1>WHAT I DO</h1>
-
-            </div>
-
-            <div id="skillsRight"> 
-                <p>And this is where i would put a skills section</p>
+                <a href="portfolio.html" class="btn">See my work <i class="fas fa-arrow-right"></i>
+                </a>
                 <br>
-                <img class="responsive-img" src="https://media.makeameme.org/created/if-i-had-5af6fe.jpg" width="300px">
+                <br>
+                <p>
+                    <a href="#col2L">ABOUT</a> / <a href="#col3L">CONTACT</a>
+
+                </p>
+
+              </div>
+            
+            <div class="section" id="col2R" >
+                <h2>THINGS I'M GOOD AT:</h2>
+                <br>
+                <ol>
+                    <li>Front end web development</li>
+                    <li>HTML & CSS</li>
+                    <li>Javascript</li>
+                    <li>UX Design</li>
+                    <li>Reasearch</li>
+                    <li>Swearing at the computer</li>
+                    <li>& more coming soon</li>
+                </ol>
+            </div>
+             
+            
+              <div class="section" id="col3R">
+                <a href="mailto:LAUREN.N.CAMERON@GMAIL.COM">
+                  <i class="fas fa-envelope"></i> 
+                  LAUREN.N.CAMERON@GMAIL.COM
+                </a>
+      
+                <br>
+      
+                <a href="tel:9196963920">
+                <i class="fas fa-phone-square-alt"></i>
+                919-696-3920
+                </a>
+      
+                <br>
+      
+                <a href="https://www.linkedin.com/in/laurencam/">
+                <i class="fab fa-linkedin"></i>
+                linkedin.com/in/laurencam
+                </a>
+      
+                <br>
+      
+                <a href="https://github.com/lolo-bc">
+                <i class="fab fa-github-square"></i>
+                github.com/lolo-bc
+                </a>
+
+                <br>
+
+                <a href="LaurenCResume.pdf">
+                  <i class="fas fa-file"></i>
+                  Resume
+                </a>
+              </div>
             </div>
         </div>
+        
+     <!-- One Container for smaller sized screens -->
+     <div class="oneContainer">
+        <header class="landing" id="titleMain">
+          <h3>HELLO, MY NAME IS</h3>
+          <img class="responsive-img" src="./Assests/photo/titleName.png" width="370px">    
+        </header>
 
-        <div class="section dualContainer">
-            <div id="contactRight">
-                <h1>GET IN TOUCH</h1>
+        <section class="mobileTextSectionMain">
+          <img class="responsive-img circle" src="./Assests/photo/datme.jpg" width="200px"> 
+            <br>  
+            <br>
+          <h2 id="col1RText">I'm a full stack web developer in training</h2>
+            <br>
+            <a href="portfolio.html" class="btn">See my work <i class="fas fa-arrow-right"></i>
+            </a>
+            <br>
+            <br>
+          <p>
+            <a href="#about">ABOUT</a> / <a href="#contact">CONTACT</a>
+          </p>
+        </section>
 
-            </div>
+        <section class="landing titleSub" id="about">
+          <img class="responsive-img" src="./Assests/photo/designer&coder.png" width="420px">    
+        </section>
 
-            <div id="contactLeft"> 
+        <section class="mobileTextSectionSub">
+          <h2>THINGS I'M GOOD AT:</h2>
+          <ol>
+              <li>Front end web development</li>
+              <li>HTML & CSS</li>
+              <li>Javascript</li>
+              <li>UX Design</li>
+              <li>Reasearch</li>
+              <li>Swearing at the computer</li>
+              <li>& more coming soon</li>
+          </ol>
+        </section>
 
-                <div class="row ">
-                    <form class="col s12">
-                      <div class="row">
-                        <div class="input-field col s12">
-                          <input placeholder="First Name" id="first_name" type="text" class="validate">
-                        </div>
-                      </div>
-                      <div class="row">
-                        <div class="input-field col s12">
-                            <input placeholder="Last Name" id="last_name" type="text" class="validate">
-                        </div>
-                      </div>
-                      <div class="row">
-                        <div class="input-field col s12">
-                          <input placeholder="Email" id="email" type="email" class="validate">
-                        </div>
-                      </div>
-                    </form>
-                    <a href="mailto:webmaster@example.com">
-                        <button class="btn waves-effect waves-light" type="submit" name="action">Send
-                            <i class="material-icons right">send</i>
-                        </button>
-                    </a>
-                  </div>
-                  
-            </div>
-        </div>
+        <section class="landing titleSub" id="contact">
+          <img class="responsive-img" src="./Assests/photo/GITSmall.png" width="400px">    
+        </section>
+
+        <section class="mobileTextSectionSub">
+          <a href="mailto:LAUREN.N.CAMERON@GMAIL.COM">
+            <i class="fas fa-envelope"></i> 
+            LAUREN.N.CAMERON@GMAIL.COM
+          </a>
+
+          <br>
+
+          <a href="tel:9196963920">
+          <i class="fas fa-phone-square-alt"></i>
+          919-696-3920
+          </a>
+
+          <br>
+
+          <a href="https://www.linkedin.com/in/laurencam/">
+          <i class="fab fa-linkedin"></i>
+          linkedin.com/in/laurencam
+          </a>
+
+          <br>
+
+          <a href="https://github.com/lolo-bc">
+          <i class="fab fa-github-square"></i>
+          github.com/lolo-bc
+          </a>
+
+          <br> 
+
+          <a href="LaurenCResume.pdf">
+            <i class="fas fa-file"></i>
+            Resume
+          </a>
+
+          
+        </section>
+
+    </div>
 
 
     </body>
@@ -106,5 +206,8 @@
 
     <!-- javascript -->
     <script type="text/javascript" src="./Assests/JS/script.js"></script>
+
+    <!-- font awesome for social media icons -->
+    <script src="https://kit.fontawesome.com/6a438b84d3.js" crossorigin="anonymous"></script>
 </html>
 

@@ -1,11 +1,75 @@
 body {
     font-family: 'Muli', sans-serif;
 }
-#leftSide {
-	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+
+.fas {
+    font-size: 25px;
+}
+.fab {
+    font-size: 25px;
+}
+
+h1 {
+    font-size: 30px !important;
+    letter-spacing: 3pt;
+    font-weight: 900 !important;
+}
+
+h2 {
+    font-size: 30px !important;
+    font-weight: 900 !important;
+    color: #224368;
+}
+
+a {
+    color: #9F4371;
+}
+
+.btn {
+    background-color: #224368 !important;
+    border: 1px;
+    font-size: 20px;
+    font-weight: 900 !important;
+}
+
+header {
+    background-color: white;
+    color: #224368;
+    font-family: 'Muli', sans-serif;
+    padding: 75px;
+    text-align: center;
+}
+
+
+.dualContainerPort {
+    display: flex;
+    padding: 0px;
+    font-family: 'Muli', sans-serif;
+    height: 100vh;
+    flex-wrap: wrap;
+}
+
+#col1RP {
+    padding: 20px;
+    font-size: 20px;
+    line-height: 25px;
+    overflow: auto;
+    max-height: 100vh;
+}
+
+
+@media only screen and (min-width: 900px) {
+
+.oneContainer{
+    display: none;
+}
+
+
+.rainbowBk {
+    background: linear-gradient(-75deg, #9F4371, #224368, #227194, #380E2E);
 	background-size: 400% 400%;
-    animation: gradient 10s ease infinite;
-    text-align: right;
+    animation: gradient 12s ease infinite;
+    color: white;
 }
 
 @keyframes gradient {
@@ -20,126 +84,153 @@ body {
 	}
 }
 
-h1 {
-    font-size: 30px !important;
-    letter-spacing: 3pt;
-    font-weight: 900 !important;
-}
-
-a {
-    color: white;
-}
-
-#bigName {
-    margin: 100px;
-}
-
-#landing {
-    height: 100vh;
-    width: 100%;
-    background-color: #ec407a;
-    margin: 0px;
-    color: white;
-    text-align: center;
-    padding: 20%;
-    font-family: 'Muli', sans-serif;
-}
 
 .dualContainer {
     display: flex;
     padding: 0px;
     font-family: 'Muli', sans-serif;
-}
-
-#aboutLeft{
-    display: inline-block;
-    height: 100vh;
-    width: 100%;
-    margin: 0px;
-    color: #ff4081;
-    text-align: center;
-    padding: 20% 0%;
-}
-
-#aboutRight{
-    display: inline-block;
-    height: 100vh;
-    width: 100%;
-    background-color: #242323;
-    color: white;
-    margin: 0px;
-    text-align: center;
-    padding: 20% 0%;
-}
-
-#skillsLeft {
-    background-color: #ec407a;
-    display: inline-block;
-    height: 100vh;
-    width: 100%;
-    margin: 0px;
-    color: white;
-    text-align: center;
-    padding: 20% 0%;
-}
-
-#skillsRight {
-    display: inline-block;
-    height: 100vh;
-    width: 100%;
-    margin: 0px;
-    color: #ff4081;
-    text-align: center;
-    padding: 20% 0%;
-}
-
-#contactRight{
-    display: inline-block;
-    height: 100vh;
-    width: 100%;
-    margin: 0px;
-    background-color: #242323;
-    color: white;
-    text-align: center;
-    padding: 20% 0%;
-}
-
-#contactLeft{
-    display: inline-block;
-    height: 100vh;
-    width: 100%;
-    /* background-color: #ec407a;
-    color: white; */
-    margin: 0px;
-    padding: 10% 0%;
-    text-align: center;
-}
-
-
-
-.container {
-    display: flex;
+    height: 300vh;
     flex-wrap: wrap;
-    padding: 0px;
-  }
+}
+
   
-  .column {
+.column {
     flex: 1;
     display: flex;
     flex-direction: column;
-    height: 300vh;
   }
   
-  .button {
+.section {
     flex: 1;
-    color: white;
+    height: 100vh !important;
   }
   
-  .button.rowspan {
+#col1L {
+    padding: 200px 50px;
+    text-align: right;
     flex: 2;
+}
+
+#col1R {
+    text-align: center;
+    padding: 200px;
   }
 
-  #col2 {
-    height: 100vh !important;
-    background-color: purple;
-  }
+#col1RText {
+    padding-top: 20px;
+}
+
+#col2L {
+    padding: 200px 50px;
+    text-align: right;
+}
+
+#col2R {
+    text-align: left;
+    padding: 200px;
+    padding-left: 150px;
+    padding-right: 150px;
+    font-size: 20px;
+    line-height: 25pt;
+    overflow-x: hidden;
+    color: #227194
+}
+
+#col3L {
+    padding: 200px 50px;
+    text-align: right;
+}
+
+#col3R {
+    text-align: left;
+    padding: 200px;
+    padding-left: 150px;
+    padding-right: 150px;
+    line-height: 70px;
+    font-size: 22px;
+    text-transform: uppercase;
+    color: #9F4371;
+}
+
+
+
+}
+
+@media only screen and (max-width: 900px) {
+
+
+h3 {
+    font-size: 30px !important;
+    font-weight: 900 !important;
+}
+
+.dualContainer {
+    display: none;
+}
+
+.landing {
+    background: linear-gradient(-75deg, #9F4371, #224368, #227194, #380E2E);
+	background-size: 400% 400%;
+    animation: gradient 12s ease infinite;
+    text-align: right;
+    min-width: 100vw;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+#titleMain{
+    color: white;
+    height: 60vh;
+    padding: 20px;
+    padding-top: 80px;
+    font-family: 'Muli', sans-serif;
+}
+
+.titleSub {
+    color: white;
+    height: 50vh;
+    padding: 30px;
+    padding-top: 80px;
+    font-family: 'Muli', sans-serif;
+    text-align: center;
+}
+
+.mobileTextSectionMain {
+    height: 80vh;
+    text-align: center;
+    padding-top: 150px;
+    font-family: 'Muli', sans-serif;
+}
+
+.mobileTextSectionSub {
+    height: 70vh;
+    min-height: 100%;
+    text-align: left;
+    padding-top: 150px;
+    padding: 60px;
+    line-height: 40px;
+    font-family: 'Muli', sans-serif;
+}
+
+}
+
+@media only screen and (min-width: 500px) {
+    .mobileTextSectionSub {
+        padding: 100px;
+    }
+
+    #titleMain {
+        padding-left: 200px;
+        padding-right: 200px;
+    }
+}
