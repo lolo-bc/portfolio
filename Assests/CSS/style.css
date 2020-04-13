@@ -1,0 +1,145 @@
+body {
+    font-family: 'Muli', sans-serif;
+}
+#leftSide {
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+    animation: gradient 10s ease infinite;
+    text-align: right;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+h1 {
+    font-size: 30px !important;
+    letter-spacing: 3pt;
+    font-weight: 900 !important;
+}
+
+a {
+    color: white;
+}
+
+#bigName {
+    margin: 100px;
+}
+
+#landing {
+    height: 100vh;
+    width: 100%;
+    background-color: #ec407a;
+    margin: 0px;
+    color: white;
+    text-align: center;
+    padding: 20%;
+    font-family: 'Muli', sans-serif;
+}
+
+.dualContainer {
+    display: flex;
+    padding: 0px;
+    font-family: 'Muli', sans-serif;
+}
+
+#aboutLeft{
+    display: inline-block;
+    height: 100vh;
+    width: 100%;
+    margin: 0px;
+    color: #ff4081;
+    text-align: center;
+    padding: 20% 0%;
+}
+
+#aboutRight{
+    display: inline-block;
+    height: 100vh;
+    width: 100%;
+    background-color: #242323;
+    color: white;
+    margin: 0px;
+    text-align: center;
+    padding: 20% 0%;
+}
+
+#skillsLeft {
+    background-color: #ec407a;
+    display: inline-block;
+    height: 100vh;
+    width: 100%;
+    margin: 0px;
+    color: white;
+    text-align: center;
+    padding: 20% 0%;
+}
+
+#skillsRight {
+    display: inline-block;
+    height: 100vh;
+    width: 100%;
+    margin: 0px;
+    color: #ff4081;
+    text-align: center;
+    padding: 20% 0%;
+}
+
+#contactRight{
+    display: inline-block;
+    height: 100vh;
+    width: 100%;
+    margin: 0px;
+    background-color: #242323;
+    color: white;
+    text-align: center;
+    padding: 20% 0%;
+}
+
+#contactLeft{
+    display: inline-block;
+    height: 100vh;
+    width: 100%;
+    /* background-color: #ec407a;
+    color: white; */
+    margin: 0px;
+    padding: 10% 0%;
+    text-align: center;
+}
+
+
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px;
+  }
+  
+  .column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    height: 300vh;
+  }
+  
+  .button {
+    flex: 1;
+    color: white;
+  }
+  
+  .button.rowspan {
+    flex: 2;
+  }
+
+  #col2 {
+    height: 100vh !important;
+    background-color: purple;
+  }
